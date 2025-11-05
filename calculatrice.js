@@ -126,7 +126,7 @@ equalButton.addEventListener("click", () => {
 
 // Function clavier
 document.addEventListener("keydown", (event) => {
-  console.log(event)
+  event.target.blur()
   pressButtonNumber(event.key);
   pressButtonOperator(event.key);
   pressButtonEquals(event.key);
