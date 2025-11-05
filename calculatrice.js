@@ -38,6 +38,10 @@ function addOperator(ope) {
     calculated = false;
     operator = ope;
     display.innerHTML += ope;
+  }else if (number1 != "" && operator != "" && number2 == "") {
+    calculated = false;
+    operator = ope;
+    display.innerHTML = number1 + ope;
   }
 }
 
