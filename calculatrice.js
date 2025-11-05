@@ -98,7 +98,7 @@ function pressButtonEquals(key) {
 }
 
 function pressButtonClear(key) {
-  if (key == "c" || key == "C") {
+  if (key == "c" || key == "C" || key == "Escape") {
     clear();
   }
 }
@@ -126,6 +126,7 @@ equalButton.addEventListener("click", () => {
 
 // Function clavier
 document.addEventListener("keydown", (event) => {
+  console.log(event)
   pressButtonNumber(event.key);
   pressButtonOperator(event.key);
   pressButtonEquals(event.key);
